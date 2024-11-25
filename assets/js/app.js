@@ -27,13 +27,7 @@ router.route("/demo", "demo", (routerInstance, params) => {
 });
 
 router.route("/download", "download", (routerInstance, params) => {
-    document.getElementById("content").innerHTML = `
-        <h1>Download WebMobile App</h1>
-        <p>Click the links below to download the app:</p>
-        <ul>
-            <li><a href="path-to-ios-download">iOS</a></li>
-            <li><a href="path-to-android-download">Android</a></li>
-        </ul>`;
+    loadPageContent("download.md");
 });
 
 // Start the router
@@ -45,7 +39,7 @@ router.activateLinks();
 // Utility function to load and display markdown content
 async function loadPageContent(file) {
     try {
-        const response = await fetch(`markdown/${file}`);
+        const response = await fetch(`/markdown/${file}`);
         if (!response.ok) throw new Error("Failed to load content");
         const text = await response.text();
         const markedContent = marked.parse(text); // Assuming Marked.js is included in the project

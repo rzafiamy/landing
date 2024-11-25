@@ -1,7 +1,7 @@
 /* General Reset */
-*{
+/**{
     border: 1px solid #fff !important;
-}
+}*/
 
 body {
     font-family: 'Arial', sans-serif;
@@ -104,4 +104,5 @@ footer {
     padding: 1rem;
     text-align: center;
     border-top: 1px solid;
+    margin-left: 220px;
 }
