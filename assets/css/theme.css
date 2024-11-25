@@ -1,65 +1,67 @@
 /* Theme Colors */
 body {
-    background-color: #121212;
-    color: #e0e0e0;
+	background-color: #121212;
+	color: #e0e0e0;
 }
 
 a {
-    color: #1db954;
+	color: #1db954;
 }
 
 a:hover {
-    color: #1ed760;
+	color: #1ed760;
 }
 
 /* Header Theme */
 header {
-    background: linear-gradient(90deg, #1db954, #121212);
-    color: #fff;
+	background: linear-gradient(90deg, #1db954, #121212);
+	color: #fff;
 }
 
 header nav ul li a {
-    background-color: #1db954;
-    color: #fff;
+	background-color: #1db954;
+	color: #fff;
 }
 
 header nav ul li a:hover {
-    background-color: #1ed760;
+	background-color: #1ed760;
 }
 
 /* Sidebar Theme */
 .sidebar {
-    background-color: #1c1c1c;
-    color: #e0e0e0;
+	background-color: #1c1c1c;
+	color: #e0e0e0;
 }
 
 .sidebar a {
-    color: #e0e0e0;
-    background-color: transparent;
+	color: #e0e0e0;
+	background-color: transparent;
 }
 
 .sidebar a:hover {
-    background-color: #1db954;
-    color: #fff;
+	background-color: #1db954;
+	color: #fff;
 }
 
 .sidebar a.active {
-    background-color: #1ed760;
-    color: #fff;
+	background-color: #1ed760;
+	color: #fff;
 }
 
 /* Footer Theme */
 footer {
-    background-color: #1c1c1c;
-    color: #e0e0e0;
-    border-top-color: #333;
+	background-color: #1c1c1c;
+	color: #e0e0e0;
+	border-top-color: #333;
 }
 
 /* Main Content */
-main h1, main h2, main h3 {
-    color: #fff;
+main h1,
+main h2,
+main h3 {
+	color: #fff;
 }
 
 main p {
-    color: #b3b3b3;
+	color: #b3b3b3;
 }

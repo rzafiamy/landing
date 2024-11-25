@@ -10,11 +10,11 @@ Your ultimate **AI-powered assistant** for smarter conversations, personalized s
 
 #### **Why Choose AI Chatbot App?**
 
-- **Instant Assistance**: Get quick answers to your questions, anytime, anywhere.
-- **Smart Conversations**: Enjoy meaningful and intelligent discussions powered by advanced AI.
-- **Personalized Experience**: Tailored responses based on your preferences and needs.
-- **Multilingual Support**: Communicate in multiple languages with ease.
-- **Privacy First**: Your conversations are secure and private.
+-   **Instant Assistance**: Get quick answers to your questions, anytime, anywhere.
+-   **Smart Conversations**: Enjoy meaningful and intelligent discussions powered by advanced AI.
+-   **Personalized Experience**: Tailored responses based on your preferences and needs.
+-   **Multilingual Support**: Communicate in multiple languages with ease.
+-   **Privacy First**: Your conversations are secure and private.
 
 ---
 
@@ -48,10 +48,10 @@ Your ultimate **AI-powered assistant** for smarter conversations, personalized s
 #### **Testimonials**
 
 > "AI Chatbot App has transformed the way I work. It’s like having a personal assistant in my pocket!"  
-– Jane D., Marketing Specialist  
+> – Jane D., Marketing Specialist
 
 > "The best conversational AI app I’ve ever used. Highly intuitive and so much fun!"  
-– Mark T., Tech Enthusiast  
+> – Mark T., Tech Enthusiast
 
 ---
 
@@ -64,9 +64,9 @@ Click the link below to download the app and experience the future of AI-driven 
 
 #### **Discover More**
 
-- [About Us](about.html)
-- [Demo](demo.html)
-- [Privacy Policy](confidentiality.html)
+-   [About Us](about.html)
+-   [Demo](demo.html)
+-   [Privacy Policy](confidentiality.html)
 
 ---
 

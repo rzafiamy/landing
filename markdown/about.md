@@ -17,7 +17,7 @@ To empower users with an AI assistant that understands, supports, and adapts to 
 #### **Our Story**
 
 The idea behind AI Chatbot App was born out of a simple question:  
-*"What if everyone could have a personal assistant that’s always available, learns from their interactions, and genuinely improves their lives?"*
+_"What if everyone could have a personal assistant that’s always available, learns from their interactions, and genuinely improves their lives?"_
 
 We assembled a team of passionate developers, data scientists, and designers to turn this vision into reality. The result is a cutting-edge AI assistant that combines advanced natural language processing, machine learning, and a user-first design philosophy.
 
@@ -41,10 +41,10 @@ We assembled a team of passionate developers, data scientists, and designers to 
 
 #### **Our Features**
 
-- **Conversational Intelligence**: Understands context, tone, and intent for meaningful interactions.
-- **Customizability**: Tailor the chatbot’s behavior to your preferences.
-- **Multilingual Support**: Communicate in over 20 languages.
-- **Seamless Integration**: Connect with smart devices and productivity tools.
+-   **Conversational Intelligence**: Understands context, tone, and intent for meaningful interactions.
+-   **Customizability**: Tailor the chatbot’s behavior to your preferences.
+-   **Multilingual Support**: Communicate in over 20 languages.
+-   **Seamless Integration**: Connect with smart devices and productivity tools.
 
 ---
 
@@ -69,10 +69,10 @@ Email us at [support@aichatbotapp.com](mailto:support@aichatbotapp.com).
 
 #### **Explore More**
 
-- [Home](index.html)
-- [Privacy Policy](confidentiality.html)
-- [Demo](demo.html)
-- [Download](download.html)
+-   [Home](index.html)
+-   [Privacy Policy](confidentiality.html)
+-   [Demo](demo.html)
+-   [Download](download.html)
 
 ---
 

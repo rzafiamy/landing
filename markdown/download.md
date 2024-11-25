@@ -10,13 +10,13 @@ Your personal AI assistant is just a click away! Download the app now and start 
 
 #### **Choose Your Platform**
 
-- **For iOS Users**  
-   Download the app directly from the **Apple App Store**:  
-   [**Download for iOS**](#)
+-   **For iOS Users**  
+     Download the app directly from the **Apple App Store**:  
+     [**Download for iOS**](#)
 
-- **For Android Users**  
-   Get the app from the **Google Play Store**:  
-   [**Download for Android**](#)
+-   **For Android Users**  
+     Get the app from the **Google Play Store**:  
+     [**Download for Android**](#)
 
 ---
 
@@ -41,15 +41,15 @@ Your personal AI assistant is just a click away! Download the app now and start 
 
 #### **System Requirements**
 
-- **iOS**: Requires iOS 12.0 or later. Compatible with iPhone, iPad, and iPod touch.  
-- **Android**: Requires Android 8.0 (Oreo) or later.  
+-   **iOS**: Requires iOS 12.0 or later. Compatible with iPhone, iPad, and iPod touch.
+-   **Android**: Requires Android 8.0 (Oreo) or later.
 
 ---
 
 #### **How to Install**
 
-1. Click the appropriate link above to go to the App Store or Google Play.  
-2. Tap the **Install** button and wait for the app to download.  
+1. Click the appropriate link above to go to the App Store or Google Play.
+2. Tap the **Install** button and wait for the app to download.
 3. Open the app and follow the on-screen setup instructions to get started.
 
 ---
@@ -63,10 +63,10 @@ Having trouble downloading or installing the app? Contact our support team:
 
 #### **Explore More**
 
-- [Home](index.html)  
-- [About Us](about.html)  
-- [Demo](demo.html)  
-- [Privacy Policy](confidentiality.html)  
+-   [Home](index.html)
+-   [About Us](about.html)
+-   [Demo](demo.html)
+-   [Privacy Policy](confidentiality.html)
 
 ---
 

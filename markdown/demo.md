@@ -38,21 +38,24 @@ Interact with a live preview of our chatbot right now!
 
 Here are a few things you can try during the demo:
 
-1. **General Questions**  
-   - "What’s the weather like today?"  
-   - "Tell me a fun fact."  
+1. **General Questions**
 
-2. **Productivity Commands**  
-   - "Set a reminder for tomorrow at 9 AM."  
-   - "Add a meeting to my calendar for Monday at 3 PM."
+    - "What’s the weather like today?"
+    - "Tell me a fun fact."
 
-3. **Entertainment**  
-   - "Recommend a movie."  
-   - "Tell me a joke."
+2. **Productivity Commands**
 
-4. **Multilingual Chat**  
-   - "Bonjour! Comment ça va?"  
-   - "¿Cómo está el clima hoy?"
+    - "Set a reminder for tomorrow at 9 AM."
+    - "Add a meeting to my calendar for Monday at 3 PM."
+
+3. **Entertainment**
+
+    - "Recommend a movie."
+    - "Tell me a joke."
+
+4. **Multilingual Chat**
+    - "Bonjour! Comment ça va?"
+    - "¿Cómo está el clima hoy?"
 
 ---
 
@@ -61,10 +64,10 @@ Here are a few things you can try during the demo:
 Take a sneak peek at the app interface:
 
 **Chat Interface**  
-![Chat Interface](#)  
+![Chat Interface](#)
 
 **Voice Interaction**  
-![Voice Interaction](#)  
+![Voice Interaction](#)
 
 **Task Automation**  
 ![Task Automation](#)
@@ -75,16 +78,16 @@ Take a sneak peek at the app interface:
 
 Enjoyed the demo? Download the full version to unlock all features and take your AI assistant everywhere:
 
-- [Download for iOS](#)  
-- [Download for Android](#)
+-   [Download for iOS](#)
+-   [Download for Android](#)
 
 ---
 
 #### **Explore More**
 
-- [Home](index.html)
-- [About Us](about.html)
-- [Confidentiality](confidentiality.html)
+-   [Home](index.html)
+-   [About Us](about.html)
+-   [Confidentiality](confidentiality.html)
 
 ---
 
