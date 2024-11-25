@@ -1,4 +1,7 @@
 import Router from "./router.js";
+import { marked } from "marked";
+import '../css/styles.css';
+import '../css/theme.css';
 
 // Authentication simulation
 const isAuthenticated = () => {
