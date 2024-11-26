@@ -25,6 +25,7 @@
 		"**/*": "prettier --write --ignore-unknown"
 	},
 	"dependencies": {
+		"canvas-confetti": "^1.9.3",
 		"marked": "^15.0.2"
 	}
 }

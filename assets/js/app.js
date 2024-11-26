@@ -1,8 +1,9 @@
 import Router from "./router.js";
 import { marked } from "marked";
-import "../css/main.css"
-// import "../css/styles.css";
-// import "../css/theme.css";
+import countdown from "./countdown.js";
+import "../css/main.css";
+
+const targetDateTime = "2024-12-01T21:00:00";
 
 // Authentication simulation
 const isAuthenticated = () => {
@@ -14,28 +15,28 @@ const isAuthenticated = () => {
 const router = new Router(isAuthenticated, "/");
 
 // Define routes
-// router.route("/", "home", (routerInstance, params) => {
-// 	loadPageContent("home.md");
-// });
+router.route("/", "home", (routerInstance, params) => {
+	loadPageContent("landing");
+});
 
 router.route("/about", "about", (routerInstance, params) => {
-	loadPageContent("about.md");
+	loadPageContent("about");
 });
 
 router.route(
-	"/confidentiality",
-	"confidentiality",
+	"/cgu",
+	"cgu",
 	(routerInstance, params) => {
-		loadPageContent("confidentiality.md");
+		loadPageContent("cgu");
 	},
 );
 
 router.route("/demo", "demo", (routerInstance, params) => {
-	loadPageContent("demo.md");
+	loadPageContent("demo");
 });
 
 router.route("/download", "download", (routerInstance, params) => {
-	loadPageContent("download.md");
+	loadPageContent("download");
 });
 
 // Start the router
@@ -45,19 +46,38 @@ router.start();
 router.activateLinks();
 
 // Utility function to load and display markdown content
-async function loadPageContent(file) {
-	try {
-		const response = await fetch(`/markdown/${file}`);
-		if (!response.ok) throw new Error("Failed to load content");
-		const text = await response.text();
-		const markedContent = marked.parse(text); // Assuming Marked.js is included in the project
-		document.getElementById("content").innerHTML = markedContent;
-	} catch (error) {
-		console.error("Error loading content:", error);
-		document.getElementById("content").innerHTML = `
-            <h1>Error</h1>
-            <p>Unable to load the content. Please try again later.</p>`;
+async function loadPageContent(page) {
+	const response = await fetch(`/pages/${ page === 'landing'? 'landing' : 'template'}.html`);
+	const content = await response.text();
+	document.getElementById("main-container").innerHTML = content;
+
+	if(page === "landing") {
+		const countdownElement = document.querySelector(".count-down-main");
+		countdown(targetDateTime, countdownElement);
+		listenToolMenu();
+	} else {
+		const response = await fetch(`/markdown/${page}.md`);
+		const content = await response.text();
+		const title = page !== 'cgu' ? page : 'privacy policy';
+		document.getElementById("page-title").innerHTML = title.charAt(0).toUpperCase() + title.slice(1);
+		document.getElementById("content").innerHTML = marked(content);
 	}
+}
+
+function listenToolMenu() {
+	document.addEventListener("DOMContentLoaded", function () {
+		const menuButton = document.querySelectorAll(".mobile-menu-button");
+		const mobileMenu = document.querySelector('div[role="mobile-menu"]');
+		const menu = document.getElementById("menu");
+		const menuLinks = menu.querySelectorAll(".mobile-menu-link");
+
+		[...menuButton, ...menuLinks].forEach((button) => {
+			button.addEventListener("click", function () {
+				mobileMenu.classList.toggle("invisible");
+				menu.classList.toggle("translate-x-full");
+			});
+		});
+	});
 }
 
 // Optional: Handle errors globally (e.g., 404 page)
