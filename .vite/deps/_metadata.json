@@ -1,0 +1,25 @@
+{
+  "hash": "ea36a5d4",
+  "configHash": "3d3e5b0d",
+  "lockfileHash": "45c12684",
+  "browserHash": "a2400dcd",
+  "optimized": {
+    "marked": {
+      "src": "../../node_modules/marked/lib/marked.esm.js",
+      "file": "marked.js",
+      "fileHash": "3856bdd4",
+      "needsInterop": false
+    },
+    "canvas-confetti": {
+      "src": "../../node_modules/canvas-confetti/dist/confetti.module.mjs",
+      "file": "canvas-confetti.js",
+      "fileHash": "601aada8",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-V6TY7KAL": {
+      "file": "chunk-V6TY7KAL.js"
+    }
+  }
+}
