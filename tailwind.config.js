@@ -3,7 +3,10 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
 export default {
-	content: ["*"],
+	content: [
+		'./**/*.{html,js}',
+		'./pages/**/*.{html,js}',
+	],
 	darkMode: "selector",
 	theme: {
 		extend: {
