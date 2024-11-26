@@ -1,7 +1,8 @@
 import Router from "./router.js";
 import { marked } from "marked";
-import "../css/styles.css";
-import "../css/theme.css";
+import "../css/main.css"
+// import "../css/styles.css";
+// import "../css/theme.css";
 
 // Authentication simulation
 const isAuthenticated = () => {
@@ -13,9 +14,9 @@ const isAuthenticated = () => {
 const router = new Router(isAuthenticated, "/");
 
 // Define routes
-router.route("/", "home", (routerInstance, params) => {
-	loadPageContent("home.md");
-});
+// router.route("/", "home", (routerInstance, params) => {
+// 	loadPageContent("home.md");
+// });
 
 router.route("/about", "about", (routerInstance, params) => {
 	loadPageContent("about.md");

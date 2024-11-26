@@ -1,4 +1,6 @@
 import { defineConfig } from "vite";
+import tailwind from "tailwindcss";
+import autoprefixer from "autoprefixer";
 
 export default defineConfig({
 	root: ".",
@@ -11,6 +13,11 @@ export default defineConfig({
 		host: "0.0.0.0",
 		watch: {
 			usePolling: true,
+		},
+	},
+	css: {
+		postcss: {
+			plugins: [tailwind, autoprefixer],
 		},
 	},
 });
