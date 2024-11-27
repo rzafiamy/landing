@@ -54,7 +54,8 @@ async function loadPageContent(page) {
 	if(page === "landing") {
 		const countdownElement = document.querySelector(".count-down-main");
 		countdown(targetDateTime, countdownElement);
-		listenToolMenu();
+		toogleMenuListener();
+		darkModeListener();
 	} else {
 		const response = await fetch(`/markdown/${page}.md`);
 		const content = await response.text();
@@ -64,21 +65,28 @@ async function loadPageContent(page) {
 	}
 }
 
-function listenToolMenu() {
-	document.addEventListener("DOMContentLoaded", function () {
-		const menuButton = document.querySelectorAll(".mobile-menu-button");
-		const mobileMenu = document.querySelector('div[role="mobile-menu"]');
-		const menu = document.getElementById("menu");
-		const menuLinks = menu.querySelectorAll(".mobile-menu-link");
+function toogleMenuListener() {
+	const menuButton = document.querySelectorAll(".mobile-menu-button");
+	const mobileMenu = document.querySelector('div[role="mobile-menu"]');
+	const menu = document.getElementById("menu");
+	const menuLinks = menu.querySelectorAll(".mobile-menu-link");
 
-		[...menuButton, ...menuLinks].forEach((button) => {
-			button.addEventListener("click", function () {
-				mobileMenu.classList.toggle("invisible");
-				menu.classList.toggle("translate-x-full");
-			});
+	[...menuButton, ...menuLinks].forEach((button) => {
+		button.addEventListener("click", function () {
+			mobileMenu.classList.toggle("invisible");
+			menu.classList.toggle("translate-x-full");
 		});
 	});
 }
+
+function darkModeListener() {
+	document.querySelectorAll("input[type='checkbox'].dark-toggle").forEach((checkbox) => {
+		checkbox.addEventListener("click", function () {
+			document.querySelector("html").classList.toggle("dark");
+		});
+	});
+}
+
 
 // Optional: Handle errors globally (e.g., 404 page)
 router.route("/404", "notFound", (routerInstance, params) => {
