@@ -22,7 +22,7 @@
 		"vite": "^5.2.0"
 	},
 	"lint-staged": {
-		"**/*": "prettier . --write --ignore-unknown"
+		"**/*": "prettier --write --ignore-unknown"
 	},
 	"dependencies": {
 		"canvas-confetti": "^1.9.3",
