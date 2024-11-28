@@ -26,6 +26,8 @@
 	},
 	"dependencies": {
 		"canvas-confetti": "^1.9.3",
+		"i18next": "^24.0.2",
+		"i18next-http-backend": "^3.0.1",
 		"marked": "^15.0.2"
 	}
 }

@@ -1,6 +1,7 @@
 import Router from "./router.js";
 import { marked } from "marked";
 import countdown from "./countdown.js";
+import i18n from "./i18n.js";
 import "../css/main.css";
 
 const targetDateTime = "2024-12-01T21:00:00";
@@ -56,6 +57,7 @@ async function loadPageContent(page) {
 		countdown(targetDateTime, countdownElement);
 		toogleMenuListener();
 		darkModeListener();
+		langSelectListener();
 	} else {
 		const response = await fetch(`/markdown/${page}.md`);
 		const content = await response.text();
@@ -63,6 +65,8 @@ async function loadPageContent(page) {
 		document.getElementById("page-title").innerHTML = title.charAt(0).toUpperCase() + title.slice(1);
 		document.getElementById("content").innerHTML = marked(content);
 	}
+
+	i18n.updateTranslations();
 }
 
 function toogleMenuListener() {
@@ -83,6 +87,18 @@ function darkModeListener() {
 	document.querySelectorAll("input[type='checkbox'].dark-toggle").forEach((checkbox) => {
 		checkbox.addEventListener("click", function () {
 			document.querySelector("html").classList.toggle("dark");
+		});
+	});
+}
+
+function langSelectListener() {
+	const lang = i18n.language;
+	const selects = document.querySelectorAll("select.lang-select");
+	selects.forEach((select) => {
+		select.value = lang;
+		select.addEventListener("change", function () {
+			i18n.changeLanguage(select.value);
+			localStorage.setItem("makix-l-page-lang", select.value);
 		});
 	});
 }
