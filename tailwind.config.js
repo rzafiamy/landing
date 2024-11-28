@@ -4,7 +4,8 @@ const colors = require("tailwindcss/colors");
 
 export default {
 	content: [
-		'./**/*.{html,js}',
+		'**/*.html',
+		'./assets/**/*.{html,js}',
 		'./pages/**/*.{html,js}',
 	],
 	darkMode: "selector",

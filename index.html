@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="dark scroll-smooth">
+<html class="dark scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
 		/>
 		<meta name="author" content="WebMobile App Team" />
 		<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-		<title>WebMobile App</title>
+		<title>Makix.com</title>
 	</head>
 	<body class="h-full">
 		<div id="main-container">
@@ -21,13 +21,13 @@
 		</div>
 		<!-- Footer Section -->
 		<footer
-			class="bg-zinc-50 text-center text-surface/75 dark:bg-gray-900 dark:text-white/75 lg:text-left"
+			class="bg-zinc-50 relative z-10 text-center text-surface/75 dark:bg-gray-900 dark:text-white/75 lg:text-left"
 		>
 			<div
 				class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-white/10 lg:justify-between"
 			>
 				<div class="me-12 hidden lg:block">
-					<span>Get connected with us on social networks:</span>
+					<span data-i18n="get_connected">Get connected with us on social networks:</span>
 				</div>
 				<!-- Social network icons container -->
 				<div class="flex justify-center">
@@ -115,28 +115,30 @@
 					<div>
 						<h6
 							class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+							data-i18n="useful_links"
 						>
-							Useful links
+							<span>Useful links</span>
 						</h6>
 						<p class="mb-4">
-							<a href="/about">About</a>
+							<a href="/about" data-i18n="about">About</a>
 						</p>
 						<p class="mb-4">
-							<a href="/demo">Demo</a>
+							<a href="/demo" data-i18n="demo">Demo</a>
 						</p>
 						<p class="mb-4">
-							<a href="/download">Download</a>
+							<a href="/download" data-i18n="download">Download</a>
 						</p>
 						<p>
-							<a href="/cgu">Privacy Policy</a>
+							<a href="/cgu" data-i18n="privacy_policy">Privacy Policy</a>
 						</p>
 					</div>
 					<!-- Contact section -->
 					<div>
 						<h6
 							class="mb-4 flex justify-center font-semibold uppercase md:justify-start"
+							data-i18n="contact"
 						>
-							Contact
+							<span>Contact</span>
 						</h6>
 						<p
 							class="mb-4 flex items-center justify-center md:justify-start"
@@ -155,7 +157,7 @@
 									/>
 								</svg>
 							</span>
-							New York, NY 10012, US
+							<span data-i18n="address">New York, NY 10012, US</span>
 						</p>
 						<p
 							class="mb-4 flex items-center justify-center md:justify-start"
@@ -174,7 +176,7 @@
 									/>
 								</svg>
 							</span>
-							info@example.com
+							<span data-i18n="email">info@example.com</span>
 						</p>
 						<p
 							class="mb-4 flex items-center justify-center md:justify-start"
@@ -192,7 +194,7 @@
 									/>
 								</svg>
 							</span>
-							+ 01 234 567 88
+							<span data-i18n="phone1">+ 01 234 567 88</span>
 						</p>
 						<p
 							class="flex items-center justify-center md:justify-start"
@@ -210,7 +212,7 @@
 									/>
 								</svg>
 							</span>
-							+ 01 234 567 89
+							<span data-i18n="phone2">+ 01 234 567 89</span>
 						</p>
 					</div>
 				</div>
@@ -218,7 +220,7 @@
 
 			<!--Copyright section-->
 			<div class="bg-black/5 p-6 text-center">
-				<span>&copy; 2024 WebMobile App. All rights reserved.</span>
+				&copy; <span data-i18n="copyright">2024 WebMobile App. All rights reserved.</span>
 			</div>
 		</footer>
 	</body>
