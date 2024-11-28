@@ -24,13 +24,9 @@ router.route("/about", "about", (routerInstance, params) => {
 	loadPageContent("about");
 });
 
-router.route(
-	"/cgu",
-	"cgu",
-	(routerInstance, params) => {
-		loadPageContent("cgu");
-	},
-);
+router.route("/cgu", "cgu", (routerInstance, params) => {
+	loadPageContent("cgu");
+});
 
 router.route("/demo", "demo", (routerInstance, params) => {
 	loadPageContent("demo");
@@ -48,11 +44,13 @@ router.activateLinks();
 
 // Utility function to load and display markdown content
 async function loadPageContent(page) {
-	const response = await fetch(`/pages/${ page === 'landing'? 'landing' : 'template'}.html`);
+	const response = await fetch(
+		`/pages/${page === "landing" ? "landing" : "template"}.html`,
+	);
 	const content = await response.text();
 	document.getElementById("main-container").innerHTML = content;
 
-	if(page === "landing") {
+	if (page === "landing") {
 		const countdownElement = document.querySelector(".count-down-main");
 		countdown(targetDateTime, countdownElement);
 		toogleMenuListener();
@@ -61,8 +59,9 @@ async function loadPageContent(page) {
 	} else {
 		const response = await fetch(`/markdown/${page}.md`);
 		const content = await response.text();
-		const title = page !== 'cgu' ? page : 'privacy policy';
-		document.getElementById("page-title").innerHTML = title.charAt(0).toUpperCase() + title.slice(1);
+		const title = page !== "cgu" ? page : "privacy policy";
+		document.getElementById("page-title").innerHTML =
+			title.charAt(0).toUpperCase() + title.slice(1);
 		document.getElementById("content").innerHTML = marked(content);
 	}
 
@@ -84,11 +83,22 @@ function toogleMenuListener() {
 }
 
 function darkModeListener() {
-	document.querySelectorAll("input[type='checkbox'].dark-toggle").forEach((checkbox) => {
-		checkbox.addEventListener("click", function () {
-			document.querySelector("html").classList.toggle("dark");
+	document
+		.querySelectorAll("input[type='checkbox'].dark-toggle")
+		.forEach((checkbox) => {
+			checkbox.addEventListener("change", function () {
+				document.querySelector("html").classList.toggle("dark");
+				localStorage.setItem("makix-l-page-dark-mode", !this.checked);
+			});
 		});
-	});
+
+	// Check local storage for dark mode preference
+	const darkMode = localStorage.getItem("makix-l-page-dark-mode");
+	if (darkMode === "false") {
+		document
+			.querySelectorAll("input[type='checkbox'].dark-toggle")[0]
+			.click();
+	}
 }
 
 function langSelectListener() {
@@ -102,7 +112,6 @@ function langSelectListener() {
 		});
 	});
 }
-
 
 // Optional: Handle errors globally (e.g., 404 page)
 router.route("/404", "notFound", (routerInstance, params) => {
