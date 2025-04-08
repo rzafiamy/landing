@@ -1,10 +1,7 @@
 import Router from "./router.js";
 import { marked } from "marked";
-import countdown from "./countdown.js";
 import i18n from "./i18n.js";
 import "../css/main.css";
-
-const targetDateTime = "2024-12-01T21:00:00";
 
 // Authentication simulation
 const isAuthenticated = () => {
@@ -51,8 +48,6 @@ async function loadPageContent(page) {
 	document.getElementById("main-container").innerHTML = content;
 
 	if (page === "landing") {
-		const countdownElement = document.querySelector(".count-down-main");
-		countdown(targetDateTime, countdownElement);
 		toogleMenuListener();
 		darkModeListener();
 		langSelectListener();
