@@ -114,3 +114,17 @@ footer {
 	text-align: center;
 	border-top: 1px solid;
 }
+
+
+#page-loader {
+	transition: opacity 0.3s ease;
+}
+
+#page-loader.opacity-0 {
+	opacity: 0;
+	pointer-events: none;
+}
+
+#page-loader.opacity-100 {
+	opacity: 1;
+}
