@@ -22,7 +22,7 @@ router.start();
 router.activateLinks();
 
 // Template caching
-let cachedTemplate = null;
+var cachedTemplate = null;
 
 async function getTemplate(page) {
 	if (page === "landing") {
