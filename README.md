@@ -115,7 +115,7 @@ Licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 For any questions or feedback, feel free to reach out:
 
-📧 [support@makix.com](mailto:support@makix.com)
+📧 [support@makix.com](mailto:support@makix.fr)
 
 Thanks for using Makix! 💚
 

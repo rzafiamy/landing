@@ -41,27 +41,46 @@ router.activateLinks();
 
 // Utility function to load and display markdown content
 async function loadPageContent(page) {
-	const response = await fetch(
-		`/pages/${page === "landing" ? "landing" : "template"}.html`,
+	const templateResponse = await fetch(
+		`/pages/${page === "landing" ? "landing" : "template"}.html`
 	);
-	const content = await response.text();
-	document.getElementById("main-container").innerHTML = content;
+	const templateContent = await templateResponse.text();
+	document.getElementById("main-container").innerHTML = templateContent;
 
 	if (page === "landing") {
 		toogleMenuListener();
 		darkModeListener();
 		langSelectListener();
 	} else {
-		const response = await fetch(`/markdown/${page}.md`);
-		const content = await response.text();
-		const title = page !== "cgu" ? page : "privacy policy";
-		document.getElementById("page-title").innerHTML =
-			title.charAt(0).toUpperCase() + title.slice(1);
-		document.getElementById("content").innerHTML = marked(content);
+		try {
+			const response = await fetch(`/markdown/${page}.md`);
+			console.log(response);
+
+			const content = await response.text();
+
+			// 🚨 Detect fallback HTML pretending to be markdown
+			if (
+				!response.ok ||
+				content.includes("<!DOCTYPE html>") ||
+				content.includes("<html")
+			) {
+				throw new Error("Markdown not found or fallback HTML received");
+			}
+
+			const title = page !== "cgu" ? page : "privacy policy";
+			document.getElementById("page-title").innerHTML =
+				title.charAt(0).toUpperCase() + title.slice(1);
+			document.getElementById("content").innerHTML = marked(content);
+		} catch (error) {
+			console.error("Error loading markdown:", error);
+			router.navigate("/404");
+		}
 	}
 
 	i18n.updateTranslations();
 }
+
+
 
 function toogleMenuListener() {
 	const menuButton = document.querySelectorAll(".mobile-menu-button");
@@ -110,7 +129,5 @@ function langSelectListener() {
 
 // Optional: Handle errors globally (e.g., 404 page)
 router.route("/404", "notFound", (routerInstance, params) => {
-	document.getElementById("content").innerHTML = `
-        <h1>404 - Page Not Found</h1>
-        <p>The page you are looking for does not exist.</p>`;
+	loadPageContent('404');
 });

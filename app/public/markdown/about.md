@@ -1,7 +1,3 @@
-Here’s a sample `about.md` file for your chatbot AI web mobile app:
-
----
-
 ### **About AI Chatbot App**
 
 At **AI Chatbot App**, we are redefining how people interact with technology. Our mission is to create a seamless, intelligent, and human-like communication experience for everyone, anywhere.
@@ -73,7 +69,3 @@ Email us at [support@aichatbotapp.com](mailto:support@aichatbotapp.com).
 -   [Privacy Policy](confidentiality.html)
 -   [Demo](demo.html)
 -   [Download](download.html)
-
----
-
-Feel free to customize this further to reflect your branding, story, and values! Let me know if you need help with anything else.
