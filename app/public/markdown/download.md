@@ -1,7 +1,3 @@
-Here’s a sample `download.md` file for your chatbot AI web mobile app:
-
----
-
 ### **Download AI Chatbot App**
 
 Your personal AI assistant is just a click away! Download the app now and start enjoying smarter, faster, and more efficient conversations.
@@ -67,7 +63,3 @@ Having trouble downloading or installing the app? Contact our support team:
 -   [About Us](about.html)
 -   [Demo](demo.html)
 -   [Privacy Policy](confidentiality.html)
-
----
-
-Feel free to replace the placeholder links with actual download links once available. Let me know if you need additional adjustments!

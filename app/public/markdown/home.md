@@ -1,7 +1,3 @@
-Here is a sample `home.md` file tailored for your chatbot AI web mobile app:
-
----
-
 ### **Welcome to AI Chatbot App**
 
 Your ultimate **AI-powered assistant** for smarter conversations, personalized support, and instant answers – right at your fingertips!

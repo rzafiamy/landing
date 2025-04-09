@@ -1,7 +1,3 @@
-Here’s a sample `demo.md` file for showcasing your chatbot AI web mobile app:
-
----
-
 ### **Experience the AI Chatbot App in Action**
 
 Ready to see what our **AI-powered assistant** can do? Explore the features and capabilities that make **AI Chatbot App** your go-to companion for smarter living.
@@ -88,7 +84,3 @@ Enjoyed the demo? Download the full version to unlock all features and take your
 -   [Home](index.html)
 -   [About Us](about.html)
 -   [Confidentiality](confidentiality.html)
-
----
-
-Feel free to replace the placeholders (e.g., screenshots, links) with actual resources. Let me know if you need help with anything else!

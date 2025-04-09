@@ -41,5 +41,5 @@ export default {
 			slate: colors.slate,
 		},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/typography')],
 };

@@ -1,7 +1,3 @@
-Here’s a sample `confidentiality.md` file for your chatbot AI web mobile app:
-
----
-
 ### **Privacy and Confidentiality Policy**
 
 At **AI Chatbot App**, your privacy and trust are our top priorities. We are committed to safeguarding your personal information and ensuring your conversations remain secure and confidential.
@@ -100,7 +96,3 @@ If you have any questions or concerns about our confidentiality practices, feel 
 -   [About Us](about.html)
 -   [Demo](demo.html)
 -   [Download](download.html)
-
----
-
-Feel free to tailor this to meet any specific legal or regional data protection requirements like GDPR, CCPA, etc. Let me know if you need further assistance!
