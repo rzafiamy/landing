@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  npm-app:
+    container_name: makix_landing
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+      - /app/node_modules
+    ports:
+      - "3001:5173" # Adjust to your app's dev port
+    command: npm run dev
