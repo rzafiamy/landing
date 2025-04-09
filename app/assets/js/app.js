@@ -11,6 +11,7 @@ const router = new Router(isAuthenticated, "/");
 
 // Define routes
 router.route("/", "home", () => loadPageContent("landing"));
+router.route("/release", "release", () => loadPageContent("release"));
 router.route("/about", "about", () => loadPageContent("about"));
 router.route("/cgu", "cgu", () => loadPageContent("cgu"));
 router.route("/demo", "demo", () => loadPageContent("demo"));
